@@ -2,9 +2,7 @@
 
 ## Entiers Binaire et Héxadécimal
 
-# Représentation des entiers en binaire
-
-## Rappel : Les bases dans la vie courante
+### Rappel : Les bases dans la vie courante
 
 $a + 2$
 Notre système de notation repose sur une dispositon en colonnes.
@@ -13,7 +11,7 @@ Une fois que nous avons atteint le chiffre 9, si l'on souhaite rajouter 1, on se
 On créée ainsi une colonne à gauche qui contiendra un chiffre allant de 1 à 9 en remettant le chiffre de la colonne originelle (ou les suivantes) à 0. 
 Par exemple 426 est composé des chiffres 4, 2 et 6 représentés dans les colonnes des centaines, dizaines et unités.
 
-## Les bases dans la vie courante
+### Les bases dans la vie courante
 
 Notre quotidien est entouré de nombres, que ce soit pour les heures qui passent, les notes, le nombre d'oeufs dans une boite.
 Ils sont partout et font partie de nos vies sans même que l'on s'en rende compte.
@@ -80,11 +78,11 @@ Pour compter en base 2, on opère de la même manière. On a une colonne qui peu
 
 *Rappel : Compter en base 10*
 
-$$154_{(10)} = 1\times10^{2} + 5\times10^{1} + 5\times10^{0}$$
+$154_{(10)} = 1\times10^{2} + 5\times10^{1} + 5\times10^{0}$
 
 Pour passer de la base 2 à la base 10, on réalise le même calcul en remplaçant la base 10 par la base 2 :
 
-$$1101_{(2)} = 1\times2^{3} + 1 \times2^{2} + 0\times2^{1} + 1 \times2^{0} = 8 + 4 + 1 = 13_{(10)}$$
+$1101_{(2)} = 1\times2^{3} + 1 \times2^{2} + 0\times2^{1} + 1 \times2^{0} = 8 + 4 + 1 = 13_{(10)}$
 L'écriture ci-dessus n'est pas anodine. A partir de maintenant, pour écrire un nombre si la base n'est pas explicite, il faut la préciser. On peut l'écrire de plusieurs manières :
 
 * $154_{(10)}$ avec la base écrite sous le nombre en parenthèses.
