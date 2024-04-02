@@ -6,6 +6,7 @@
 
 ## Rappel : Les bases dans la vie courante
 
+$a + 2$
 Notre système de notation repose sur une dispositon en colonnes.
 Nous comptons avec 10 symboles allant de 0 à 9 que l'on nomme **chiffre**.
 Une fois que nous avons atteint le chiffre 9, si l'on souhaite rajouter 1, on se rend compte que l'on n'a pas de chiffres supérieurs.
