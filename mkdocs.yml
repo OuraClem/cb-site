@@ -1,0 +1,30 @@
+site_name: NSI - Clément Braun
+theme:
+  name : material
+  features :
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - toc.integrate
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.tabs.link
+    - content.code.annotation
+    - content.code.copy
+  language: fr
+  palette:
+    primary: brown
+    accent: amber
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+
+copyright: |
+  &copy; 2024 <a>Clément Braun</a>
