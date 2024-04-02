@@ -38,20 +38,20 @@ L'avantage, c'est que l'on peut *chanter les nombres*.
 
 * L'octal est une base contenant 8 symboles allant de 0 à 7.
   Cette base servait aux informaticiens qui développaient en langage machine pour réduire le nombre de bits à écrire.
-  On l'écrit $B_{8} = \lbrace 0,1,2,3,4,5,6,7 \rbrace$
+  On l'écrit $$B_{8} = \lbrace 0,1,2,3,4,5,6,7 \rbrace$$
 
 ## Définitions
 
 Une base correspond au nombre de symboles qui permettent de représenter les chiffres ou les nombres.
 
-Pour notre base décimale habituelle on écrit : $B_{10} = \lbrace 0,1,2,...,9 \rbrace$
+Pour notre base décimale habituelle on écrit : $$B_{10} = \lbrace 0,1,2,...,9 \rbrace$$
 
 En informatique, il a été décidé d'utiliser le binaire pour plusieurs raisons.
 La principale est **le fait qu'une machine peut facilement détecter la différence entre deux état**. En effet, un processeur est composé de transistors qui traitent deux états : ouverts et fermés à la manière d'un interrupteur.
 
 Le binaire, ou représentation en base 2 est un moyen de représenter les nombres avec 2 symboles ici 0 ou 1.
 
-On peut écrire $B_{2} = \lbrace 0,1 \rbrace$.
+On peut écrire $$B_{2} = \lbrace 0,1 \rbrace$$.
 
 On nomme **bit** les chiffres de la représentation en base 2 et un ensemble de 8 bits est appellé un *byte* ou *octet*.
 
@@ -79,23 +79,23 @@ Pour compter en base 2, on opère de la même manière. On a une colonne qui peu
 
 *Rappel : Compter en base 10*
 
-$$154_{(10)} = 1\times10^{2} + 5\times10^{1} + 5\times10^{0}$$
+$$$$154_{(10)} = 1\times10^{2} + 5\times10^{1} + 5\times10^{0}$$$$
 
 Pour passer de la base 2 à la base 10, on réalise le même calcul en remplaçant la base 10 par la base 2 :
 
-$$1101_{(2)} = 1\times2^{3} + 1 \times2^{2} + 0\times2^{1} + 1 \times2^{0} = 8 + 4 + 1 = 13_{(10)}$$
+$$$$1101_{(2)} = 1\times2^{3} + 1 \times2^{2} + 0\times2^{1} + 1 \times2^{0} = 8 + 4 + 1 = 13_{(10)}$$$$
 L'écriture ci-dessus n'est pas anodine. A partir de maintenant, pour écrire un nombre si la base n'est pas explicite, il faut la préciser. On peut l'écrire de plusieurs manières :
 
-* $154_{(10)}$ avec la base écrite sous le nombre en parenthèses.
+* $$154_{(10)}$$ avec la base écrite sous le nombre en parenthèses.
   <br/>
-* $\overline{154}^{(10)}$ avec le nombre surligné et la base indiquée entre parenthèses.
+* $$\overline{154}^{(10)}$$ avec le nombre surligné et la base indiquée entre parenthèses.
 
 **Exercice** : Convertir les nombres de binaire en base décimale
 
-* $1101_{(2)}$
-* $1001_{(2)}$
-* $1010_{(2)}$
-* $1111_{(2)}$
+* $$1101_{(2)}$$
+* $$1001_{(2)}$$
+* $$1010_{(2)}$$
+* $$1111_{(2)}$$
 
 ### Comment passer de base 10 à base 2
 
@@ -124,14 +124,14 @@ De la même manière que l'on écrit en addition de puissances de bases (comme v
 On divise successivement le nombre à convertir par 2. Chaque **reste** correspond au nombre dans la représentation et chaque **quotient** est à diviser à la suite par 2.
 On repète ces opération jusqu'à ce que le quotient soit 0 et le reste 1.
 Pour obtenir la représentation on part du reste le plus en bas qui représente le bit le plus à gauche (bit de poids fort) et on remonte pour obtenir le bit le plus à droite (bit de poids faible).
-Pour 29 on obtient ainsi : $11101_{2} = 1\times2^{4} + 1\times2^{3} + 1\times2^{2} + 1\times2^{0} = 16 + 8 + 4 + 1 = 29_{10}$
+Pour 29 on obtient ainsi : $$11101_{2} = 1\times2^{4} + 1\times2^{3} + 1\times2^{2} + 1\times2^{0} = 16 + 8 + 4 + 1 = 29_{10}$$
 
 **Exercice**: Convertir les nombres en écriture décimale en binaire:
 
-* $27_{10}$
-* $14_{10}$
-* $42_{10}$
-* $33_{10}$
+* $$27_{10}$$
+* $$14_{10}$$
+* $$42_{10}$$
+* $$33_{10}$$
 
 #### Méthode des soustractions successives
 
@@ -139,7 +139,7 @@ Une autre méthode utilisable est la méthode des soustractions successives.
 
 Pour ce faire, il suffit de se munir d'un tableau de puissances de 2 et de savoir calculer toutes les puissances de 2 (une calculatrice peut aussi aider pour les puissances élevées).
 
-|$2^{n}$|$2^{n-1}$|$2^{n-2}$|...|$2^{2}$|$2^{1}$|$2^{0}$|
+|$$2^{n}$$|$$2^{n-1}$$|$$2^{n-2}$$|...|$$2^{2}$$|$$2^{1}$$|$$2^{0}$$|
 |-------|---------|---------|---|-------|-------|-------|
 ||||||||
 
@@ -151,19 +151,19 @@ Est-ce que 42 > 64 ? Non, on met 0 dans la case du tableau.
 Est-ce que 42 > 32 ? Oui, on met 1 dans la case du tableau. On opère maintenant sur le reste de la soustraction de 42 et 32.
 Est-ce que 10 > 16 ? Non, on met 0 dans le tableau.
 Et ainsi de suite jusqu'à avoir soit 0 au reste soit 1 qui correspond à la dernière case du tableau.
-|$2^{6} = 64$|$2^{5}=32$|$2^{4} = 16$|$2^{3} = 8$|$2^{2} = 4 $|$2^{1} = 2 $|$2^{0} = 1$|
+|$$2^{6} = 64$$|$$2^{5}=32$$|$$2^{4} = 16$$|$$2^{3} = 8$$|$$2^{2} = 4 $$|$$2^{1} = 2 $$|$$2^{0} = 1$$|
 |-------|---------|---------|---|-------|-------|-------|
 |0|1|0|1|0|1|0|
 
-On peut aussi passer de binaire à décimal grâce à cette méthode, prenons en exemple $101110_{2}$.
+On peut aussi passer de binaire à décimal grâce à cette méthode, prenons en exemple $$101110_{2}$$.
 
-|$2^{6} = 64$|$2^{5}=32$|$2^{4} = 16$|$2^{3} = 8$|$2^{2} = 4 $|$2^{1} = 2 $|$2^{0} = 1$|
+|$$2^{6} = 64$$|$$2^{5}=32$$|$$2^{4} = 16$$|$$2^{3} = 8$$|$$2^{2} = 4 $$|$$2^{1} = 2 $$|$$2^{0} = 1$$|
 |-------|---------|---------|---|-------|-------|-------|
 |0|1|0|1|0|1|0|
 
 Il suffit d'ajouter toutes les puissances de 2 où la case correspondante est à 1.
 
-Ici on aurait : $2^{5} + 2^{2}  + 2^{1} = 42$, aussi facile que cela.
+Ici on aurait : $$2^{5} + 2^{2}  + 2^{1} = 42$$, aussi facile que cela.
 
 ## Hexadécimal
 
@@ -177,7 +177,7 @@ Cette base est très utile pour divers usages notamment :
 
 
 
-On peut noter cette base $B_{16} = \lbrace0,1,2,3,4,5,6,7,8,9,A,B,C,D,E,F\rbrace$
+On peut noter cette base $$B_{16} = \lbrace0,1,2,3,4,5,6,7,8,9,A,B,C,D,E,F\rbrace$$
 
 On représente chaque symbole de la représentation en base hexadécimale par un ensemble de 4 bits. On peut donc dresser le tableau suivant :
 
@@ -215,12 +215,12 @@ Ainsi, on regroupe par paquets de 4 bits en partant du bit de poids faible et en
 Enfin, on associe chaque paquet de 4 bits à son équivalent en base 16.
 
 **Exemple** : 
-On a $430_{10}$. On cherche sa représentation en base 2.
-On obtient $1~1010~1110_{2}$.
-On rajoute les 0 à gauche pour créer un paquet de 4 et on obtient : $0001~1010~1110_{2}$.
+On a $$430_{10}$$. On cherche sa représentation en base 2.
+On obtient $$1~1010~1110_{2}$$.
+On rajoute les 0 à gauche pour créer un paquet de 4 et on obtient : $$0001~1010~1110_{2}$$.
 Enfin, on associe les bits correspondants à leur représentation héxadécimale:
-$0001_{2} = 1_{16} ; 1010_{2} = A_{16} ; 1110_{2} = 4_{16} $
-On en déduit alors que $0001~1010~1110_{2} <=> 1AE_{16}$.
+$$0001_{2} = 1_{16} ; 1010_{2} = A_{16} ; 1110_{2} = 4_{16} $$
+On en déduit alors que $$0001~1010~1110_{2} <=> 1AE_{16}$$.
 
 
 #### Passage de la base héxadécimale à la base décimale
@@ -231,25 +231,25 @@ Pour rendre ca compréhensible, on peut remplacer chaque symbole héxadécimal p
 
 Ainsi ,en reprenant l'exemple précédent:
 
-$1_{16} = 1_{10~};~A_{16} = 10_{10}~;~E_{16} = 14_{10}$
-$1AE_{16} = 1\times 16^{2} + 10\times 16^{1} + 14\times 16^{0} = 256_{10} + 160_{10} + 14_{10} = 430_{10} $
+$$1_{16} = 1_{10~};~A_{16} = 10_{10}~;~E_{16} = 14_{10}$$
+$$1AE_{16} = 1\times 16^{2} + 10\times 16^{1} + 14\times 16^{0} = 256_{10} + 160_{10} + 14_{10} = 430_{10} $$
 
 #### Passage par la base 2
 
 La première étape est de convertir chaque symbole du nombre en base hexadécimale en base 2.
 
 **Exemple**:
-$1AE_{16} = 0001~1010~1110_{2}$
+$$1AE_{16} = 0001~1010~1110_{2}$$
 
 Ensuite, simplement, on convertit de la base 2 à la base décimale comme vu précédemment.
 
-$0001~1010~1110_{2} = 1\times2^{8}+1\times2^{7}+1\times2^{5}+1\times2^{3}+1\times2^{2}+1\times2^{1} = 430_{10}$.
+$$0001~1010~1110_{2} = 1\times2^{8}+1\times2^{7}+1\times2^{5}+1\times2^{3}+1\times2^{2}+1\times2^{1} = 430_{10}$$.
 
 
 **Exercice 1** : Conversion de l'hexadécimal au décimal :
 
-Convertir le nombre hexadécimal $1F3_{16}$ en décimal.
+Convertir le nombre hexadécimal $$1F3_{16}$$ en décimal.
 
 **Exercice 2** : Conversion du décimal à l'hexadécimal :
 
-Convertir le nombre décimal $393_{16}$ en hexadécimal.
+Convertir le nombre décimal $$393_{16}$$ en hexadécimal.
