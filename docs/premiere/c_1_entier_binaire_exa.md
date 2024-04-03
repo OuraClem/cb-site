@@ -146,13 +146,13 @@ Est-ce que 42 > 64 ? Non, on met 0 dans la case du tableau.
 Est-ce que 42 > 32 ? Oui, on met 1 dans la case du tableau. On opère maintenant sur le reste de la soustraction de 42 et 32.
 Est-ce que 10 > 16 ? Non, on met 0 dans le tableau.
 Et ainsi de suite jusqu'à avoir soit 0 au reste soit 1 qui correspond à la dernière case du tableau.
-|$2^{6} = 64$|$2^{5}=32$|$2^{4} = 16$|$2^{3} = 8$|$2^{2} = 4 $|$2^{1} = 2 $|$2^{0} = 1$|
+| $2^{6} = 64$ | $2^{5}=32$ | $2^{4} = 16$ | $2^{3} = 8$ | $2^{2} = 4$ | $2^{1} = 2$ | $2^{0} = 1$ |
 |-------|---------|---------|---|-------|-------|-------|
 |0|1|0|1|0|1|0|
 
 On peut aussi passer de binaire à décimal grâce à cette méthode, prenons en exemple $101110_{2}$.
 
-|$2^{6} = 64$|$2^{5}=32$|$2^{4} = 16$|$2^{3} = 8$|$2^{2} = 4 $|$2^{1} = 2 $|$2^{0} = 1$|
+|$2^{6} = 64$|$2^{5}=32$|$2^{4} = 16$|$2^{3} = 8$|$2^{2} = 4$|$2^{1} = 2$|$2^{0} = 1$|
 |-------|---------|---------|---|-------|-------|-------|
 |0|1|0|1|0|1|0|
 
@@ -178,22 +178,22 @@ On représente chaque symbole de la représentation en base hexadécimale par un
 
 |base hexadécimale|binaire|décimal|
 |-----------------|-------|-------|
-|||0
-|||1
-|||2
-|||3
-|||4
-|||5
-|||6
-|||7
-|||8
-|||9
-|||10
-|||11
-|||12
-|||13
-|||14
-|||15
+|0|0000|0
+|1|0001|1
+|2|0010|2
+|3|0011|3
+|4|0100|4
+|5|0101|5
+|6|0110|6
+|7|0111|7
+|8|1000|8
+|9|1001|9
+|A|1010|10
+|B|1011|11
+|C|1100|12
+|D|1101|13
+|E|1110|14
+|F|1111|15
 
 ### Convertir en base hexadécimale
 
@@ -214,8 +214,8 @@ On a $430_{10}$. On cherche sa représentation en base 2.
 On obtient $1~1010~1110_{2}$.
 On rajoute les 0 à gauche pour créer un paquet de 4 et on obtient : $0001~1010~1110_{2}$.
 Enfin, on associe les bits correspondants à leur représentation héxadécimale:
-$0001_{2} = 1_{16} ; 1010_{2} = A_{16} ; 1110_{2} = 4_{16} $
-On en déduit alors que $0001~1010~1110_{2} <=> 1AE_{16}$.
+$0001_{2} = 1_{16} ; 1010_{2} = A_{16} ; 1110_{2} = 4_{16}$
+On en déduit alors que $0001~1010~1110_{2} \Leftrightarrow 1AE_{16}$.
 
 
 #### Passage de la base héxadécimale à la base décimale
@@ -227,7 +227,7 @@ Pour rendre ca compréhensible, on peut remplacer chaque symbole héxadécimal p
 Ainsi ,en reprenant l'exemple précédent:
 
 $1_{16} = 1_{10~};~A_{16} = 10_{10}~;~E_{16} = 14_{10}$
-$1AE_{16} = 1\times 16^{2} + 10\times 16^{1} + 14\times 16^{0} = 256_{10} + 160_{10} + 14_{10} = 430_{10} $
+$1AE_{16} = 1\times 16^{2} + 10\times 16^{1} + 14\times 16^{0} = 256_{10} + 160_{10} + 14_{10} = 430_{10}$
 
 #### Passage par la base 2
 
