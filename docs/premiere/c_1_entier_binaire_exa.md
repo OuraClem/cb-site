@@ -212,7 +212,7 @@ Enfin, on associe chaque paquet de 4 bits à son équivalent en base 16.
 **Exemple** : 
 On a $430_{10}$. On cherche sa représentation en base 2.
 On obtient $1~1010~1110_{2}$.
-On rajoute les 0 à gauche pour créer un paquet de 4 et on obtient : $0001~1010~1110_{2}$.
+On rajoute les 0 à gauche pour créer un paquet de 4 et on obtient : $000110101110_{2}$.
 Enfin, on associe les bits correspondants à leur représentation héxadécimale:
 $0001_{2} = 1_{16} ; 1010_{2} = A_{16} ; 1110_{2} = 4_{16}$
 On en déduit alors que $0001~1010~1110_{2} \Leftrightarrow 1AE_{16}$.
@@ -238,7 +238,7 @@ $1AE_{16} = 0001~1010~1110_{2}$
 
 Ensuite, simplement, on convertit de la base 2 à la base décimale comme vu précédemment.
 
-$0001~1010~1110_{2} = 1\times2^{8}+1\times2^{7}+1\times2^{5}+1\times2^{3}+1\times2^{2}+1\times2^{1} = 430_{10}$.
+$000110101110_{2} = 1\times2^{8}+1\times2^{7}+1\times2^{5}+1\times2^{3}+1\times2^{2}+1\times2^{1} = 430_{10}$.
 
 
 **Exercice 1** : Conversion de l'hexadécimal au décimal :
