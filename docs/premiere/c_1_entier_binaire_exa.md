@@ -226,7 +226,7 @@ Pour rendre ca compréhensible, on peut remplacer chaque symbole héxadécimal p
 
 Ainsi ,en reprenant l'exemple précédent:
 
-$1_{16} = 1_{10~};~A_{16} = 10_{10}~;~E_{16} = 14_{10}$
+$1_{16} = 1_{10};A_{16} = 10_{10};E_{16} = 14_{10}$
 $1AE_{16} = 1\times 16^{2} + 10\times 16^{1} + 14\times 16^{0} = 256_{10} + 160_{10} + 14_{10} = 430_{10}$
 
 #### Passage par la base 2
